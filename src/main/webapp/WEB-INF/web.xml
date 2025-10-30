@@ -1,0 +1,20 @@
+<web-app xmlns="http://jakarta.ee/xml/ns/jakartaee"
+         version="5.0">
+
+    <!-- Servlet Configuration -->
+    <servlet>
+        <servlet-name>WeatherServlet</servlet-name>
+        <servlet-class>com.weather.WeatherServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>WeatherServlet</servlet-name>
+        <url-pattern>/WeatherServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- Welcome File Configuration -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>
